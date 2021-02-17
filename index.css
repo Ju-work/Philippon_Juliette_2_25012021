@@ -540,8 +540,8 @@ h4 {
   }
   .nav_inscrire {
     position: absolute;
-    left: 300px;
-    top:2px;
+    left: 350px;
+    top: 35px;
     width: 100%;
   }
   nav:nth-child(3) {
