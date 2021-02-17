@@ -1,0 +1,689 @@
+@font-face {
+  font-family: "Raleway_light";
+  src: url("./typos/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway_bold";
+  src: url("./typos/Raleway-Bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Raleway_light"; /* police appliquée à tout le site par défaut */
+}
+
+.main_wrapper {
+  width: 100%;
+  padding: 0 2%;
+}
+
+.logo {
+  padding-top: 15px;
+  width: 80%;
+  margin: 0 0 10px 0;
+}
+.haut_de_page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.entête {
+  margin: 0 0 10px 0;
+}
+
+/* Navigation ----------------------------------------------------------------------*/
+
+nav {
+  color: #0065fc;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 1.3em;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-top: 2px solid #0065fc;
+  padding-top: 15px;
+}
+
+.nav_inscrire {
+  font-family: "Raleway_bold";
+}
+
+/* titre principal-------------------------------------------------------------------*/
+
+h1 {
+  font-family: "Raleway_bold";
+  font-size: 22px;
+}
+
+/* formulaire-----------------------------------------------------------------------*/
+
+/* j'essai de designer mon formulaire mais ça ne marche pas */
+
+.formulaire {
+  display: inline-flex;
+
+  width: 25%;
+  height: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 47px;
+  border: 3px solid #f2f2f2;
+  border-radius: 10px;
+}
+
+.fa-map-marker-alt {
+  font-size: 20px;
+  margin-right: 20px;
+  height: 30px;
+  width: 25px;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+/*label {
+  font-family: "Raleway_bold";
+  text-align: center;
+  font-size: large;
+  border-radius: 0px 10px 10px 0px;
+}*/
+
+.champ input {
+  font-family: "Raleway_bold";
+  text-decoration;
+  font-size: larger;
+  width: 120%;
+  height: 84%;
+
+  border-style: none;
+}
+.envoi input {
+  font-family: "Raleway_bold";
+  background: #0065fc;
+  border: 3px solid #0065fc;
+  display: flex;
+  color: #ccc;
+  font-size: larger;
+  height: 49px;
+  width: 160px;
+  margin-left: 45px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* boutons filtres-----------------------------------------------------------------*/
+
+.filtres {
+  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  font-family: "Raleway_bold";
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px 40px 0px;
+}
+.filtres p {
+  width: auto;
+}
+.bouton {
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 50px;
+  font-size: 17px;
+  border-style: solid;
+  border-width: 4px;
+  padding-right: 30px;
+  border-radius: 50px;
+  border-color: #f2f2f2;
+  height: 50px;
+}
+.bouton:hover {
+  background-color: #deebff;
+  width: auto;
+  height: 50px;
+}
+.fa-money-bill-wave {
+  display: flex;
+  align-items: center;
+  color: #0065fc;
+  position: relative;
+  line-height: 20px;
+  top: -2px;
+  left: -3px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #deebff;
+  padding: 11px;
+  border-radius: 50%;
+}
+.fa-child {
+  color: #0065fc;
+  width: 27px;
+  height: 27px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #deebff;
+  padding: 11px;
+  border-radius: 50%;
+}
+.fa-heart {
+  color: #0065fc;
+  width: 27px;
+  height: 27px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #deebff;
+  padding: 11px;
+  border-radius: 30px;
+}
+.fa-dog {
+  color: #0065fc;
+  width: 27px;
+  height: 27px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #deebff;
+  padding: 11px;
+  border-radius: 50%;
+}
+.entête p {
+  margin-top: 30px;
+}
+.fa-info {
+  color: #0065fc;
+  width: 15px;
+  height: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #deebff;
+  padding: 5px;
+  margin: auto;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* Premier conteneur Hébergements-------------------------------------------------*/
+
+.conteneur_hebergement {
+  width: 100%;
+  height: auto;
+  margin: 0 20px 0 0;
+  /*margin: 2% 2% 5% 0%;*/
+  border-radius: 20px;
+  padding: 25px 25px 0px 25px;
+  background-color: #f2f2f2;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.cadre_blanc {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+}
+
+.conteneur_hebergement .cadre_blanc {
+  width: 28%;
+  height: 30%;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 12px 0px 30px 0px;
+  padding: 7px 7px 0px 7px;
+  box-shadow: #ccc 0px 0px 16px;
+}
+
+.cadre_blanc img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+h2 {
+  font-family: "Raleway_bold";
+  font-size: x-large;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 2%;
+  display: flex;
+}
+
+.nom_prix_note {
+  width: auto;
+  height: 50%;
+  margin: 5px 0px 7px 0px;
+  padding-left: 9px;
+  font-size: 17px;
+  text-align: left;
+  line-height: 25px;
+}
+.nom_etablissement {
+  font-family: "Raleway_bold";
+  font-size: larger;
+}
+.fa.fa-star.checked {
+  color: #0065fc;
+}
+.fa-star {
+  color: #f2f2f2;
+}
+.plus {
+  width: 100%;
+  display: flex;
+  font-family: "Raleway_bold";
+  font-size: 20px;
+  margin-left: 20px;
+}
+/* Partie conteneur Les plus populaires---------------------------------------------- */
+
+.titre_picto {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.fa-chart-line {
+  width: auto;
+  height: auto;
+  margin-right: 20px;
+  font-size: x-large;
+  display: flex;
+}
+
+.conteneur_populaire {
+  width: 30%;
+  height: auto;
+  margin: 0 0 0 20px;
+  border-radius: 20px;
+  padding: 25px 25px 25px 25px;
+  background-color: #f2f2f2;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: auto;
+}
+.conteneur_populaire .cadre_blanc {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 185px;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 30px 20px 18px 30px;
+  padding: 7px;
+  box-shadow: #ccc 0px 0px 16px;
+}
+.conteneur_populaire .cadre_blanc img {
+  height: 185px;
+  width: 45%;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+  margin-right: 10px;
+}
+.conteneur_populaire .description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.etoile {
+  padding-left: 9px;
+  padding-bottom: 10px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.conteneur_activitee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: "Raleway_bold";
+  font-size: x-large;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 12%;
+  display: flex;
+}
+
+.lieu {
+  font-family: "Raleway_bold";
+  width: auto;
+  height: auto;
+  margin: 15px 0px 0px 15px;
+  font-size: 17px;
+  text-align: left;
+  display: flex;
+}
+
+.cadre_1 {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 20px;
+  /*margin: 30px 20px 18px 30px;*/
+  box-shadow: 6px 2px 9px #ccc;
+}
+.cadre_1 img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.cadre_1 .lieu {
+  display: flex;
+  align-items: flex-start;
+}
+.colone_image {
+  height: 100%;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cadre_2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 20px;
+  /*margin: 30px 20px 18px 30px;*/
+  box-shadow: 6px 2px 9px #ccc;
+}
+.cadre_2 img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.cadre_2 .lieu {
+  display: flex;
+  align-items: flex-start;
+}
+.cadre_3 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 20px;
+  /* margin: 30px 20px 18px 30px;*/
+  box-shadow: 6px 2px 9px #ccc;
+}
+.cadre_3 img {
+  height: 75%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+.cadre_3 .lieu {
+  display: flex;
+  align-items: flex-start;
+}
+footer {
+  background-color: #f2f2f2;
+  margin-top: 150px;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.conteneur_footer {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  line-height: 30px;
+}
+footer a:hover {
+  font-family: "Raleway_bold";
+}
+h4 {
+  width: 100%;
+  font-family: "Raleway_bold";
+  padding: 0 0 0 40px;
+  margin-bottom: 0px;
+}
+.about {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.social a {
+  font-size: 40px;
+}
+
+/*Les mediaqueries version mobile-----------------------------------------------------*/
+
+@media screen and (max-width: 500px) {
+  .main_wrapper {
+    width: 500px;
+    /*padding: 0 2%;*/
+  }
+
+  header {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .haut_de_page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .nav_inscrire {
+    position: absolute;
+    left: 300px;
+    top:2px;
+    width: 100%;
+  }
+  nav:nth-child(3) {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+  .nav_hebergement {
+    width: 50%;
+  }
+  .nav_activite {
+    width: 50%;
+  }
+  .formulaire {
+    width: 500px;
+  }
+
+  form {
+    width: 60%;
+  }
+
+  .filtres p {
+    width: 100%;
+    margin-left: 5px;
+    font-size: larger;
+    display: flex;
+  }
+  .filtres {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .bouton {
+    font-size: large;
+    margin-bottom: 20px;
+    border-width: 2px;
+  }
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .conteneur_populaire {
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 10px 5px 30px 2px;
+    border-radius: 0%;
+    background-color: #deebff;
+  }
+  .conteneur_populaire .cadre_blanc {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  .conteneur_hebergement {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 0;
+    padding: 0;
+  }
+  .conteneur_hebergement .cadre_blanc {
+    display: block;
+    justify-content: flex-end;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .plus {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+  .conteneur_activitee {
+    width: 500px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .cadre_1 {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .colone_image {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .colone_image .cadre_2 .cadre_3 {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cadre_2 {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cadre_3 {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  /*nav {
+    width: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav_inscrire {
+    width: 100%;
+    display: inline-flex;
+    justify-content: right;
+    align-content: flex-end;
+    margin-top: 60px;
+  }
+  .nav_activite .nav_hebergement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }*/
+  h1 {
+    width: auto;
+    margin-top: 50px;
+  }
+}
