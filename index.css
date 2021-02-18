@@ -11,7 +11,7 @@ body {
   font-family: "Raleway_light"; /* police appliquée à tout le site par défaut */
 }
 
-.main_wrapper {
+.main_wrapper { /* pour définir des marges plus facilement sur ma page*/
   width: 100%;
   padding: 0 2%;
 }
@@ -29,6 +29,9 @@ body {
 
 .entête {
   margin: 0 0 10px 0;
+}
+.entête p{
+  font-size: larger;
 }
 
 /* Navigation ----------------------------------------------------------------------*/
@@ -64,11 +67,9 @@ h1 {
 
 /* formulaire-----------------------------------------------------------------------*/
 
-/* j'essai de designer mon formulaire mais ça ne marche pas */
 
 .formulaire {
   display: inline-flex;
-
   width: 25%;
   height: 35px;
   margin-top: 30px;
@@ -96,12 +97,6 @@ form {
   border-radius: 5px 0px 0px 5px;
 }
 
-/*label {
-  font-family: "Raleway_bold";
-  text-align: center;
-  font-size: large;
-  border-radius: 0px 10px 10px 0px;
-}*/
 
 .champ input {
   font-family: "Raleway_bold";
@@ -109,15 +104,18 @@ form {
   font-size: larger;
   width: 120%;
   height: 84%;
-
   border-style: none;
+}
+::placeholder{
+  color: black;
+  opacity: 1;
 }
 .envoi input {
   font-family: "Raleway_bold";
   background: #0065fc;
   border: 3px solid #0065fc;
   display: flex;
-  color: #ccc;
+  color:white;
   font-size: larger;
   height: 49px;
   width: 160px;
@@ -125,10 +123,11 @@ form {
   border-radius: 0px 10px 10px 0px;
 }
 
+
 /* boutons filtres-----------------------------------------------------------------*/
 
 .filtres {
-  font-size: 17px;
+  font-size: larger;
   display: flex;
   flex-wrap: wrap;
   width: 60%;
@@ -137,95 +136,122 @@ form {
   align-items: center;
   margin: 40px 0px 40px 0px;
 }
-.filtres p {
-  width: auto;
-}
+
 .bouton {
   width: auto;
+  height: 60px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
-  line-height: 50px;
-  font-size: 17px;
   border-style: solid;
-  border-width: 4px;
-  padding-right: 30px;
+  border-width: 3px;
+  padding-right: 20px;
   border-radius: 50px;
   border-color: #f2f2f2;
-  height: 50px;
+  margin-bottom: 70px;
+  
 }
 .bouton:hover {
   background-color: #deebff;
+  border: 3px solid #deebff;
   width: auto;
-  height: 50px;
+  height: 60px;
 }
-.fa-money-bill-wave {
+.bouton .fa-money-bill-wave {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   color: #0065fc;
-  position: relative;
-  line-height: 20px;
-  top: -2px;
+  background-color: #deebff;
+  width: 61px;
+  height: 61px;
+  font-size: x-large;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+ position: relative;
   left: -3px;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #deebff;
-  padding: 11px;
-  border-radius: 50%;
-}
-.fa-child {
+ }
+
+.bouton .fa-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: #0065fc;
-  width: 27px;
-  height: 27px;
-  font-size: 20px;
-  text-align: center;
-  margin-right: 10px;
   background-color: #deebff;
-  padding: 11px;
+  width: 61px;
+  height: 61px;
+  font-size: x-large;
+  text-align: center;
   border-radius: 50%;
-}
-.fa-heart {
-  color: #0065fc;
-  width: 27px;
-  height: 27px;
-  font-size: 20px;
-  text-align: center;
   margin-right: 10px;
-  background-color: #deebff;
-  padding: 11px;
-  border-radius: 30px;
+ position: relative;
+  left: -3px;
 }
-.fa-dog {
+
+.bouton .fa-heart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   color: #0065fc;
-  width: 27px;
-  height: 27px;
-  font-size: 20px;
-  text-align: center;
-  margin-right: 10px;
   background-color: #deebff;
-  padding: 11px;
+  width: 61px;
+  height: 61px;
+  font-size: x-large;
+  text-align: center;
   border-radius: 50%;
+  margin-right: 10px;
+ position: relative;
+  left: -3px;
+}
+.bouton .fa-dog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #0065fc;
+  background-color: #deebff;
+  width: 61px;
+  height: 61px;
+  font-size: x-large;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+ position: relative;
+  left: -3px;
 }
 .entête p {
   margin-top: 30px;
 }
-.fa-info {
-  color: #0065fc;
-  width: 15px;
-  height: 15px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #deebff;
-  padding: 5px;
-  margin: auto;
+/* icone info à revoir, problème de centrage------------------------------------------------*/
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  border-radius: 50%;
-  margin-right: 10px;
-  vertical-align: middle;
-  text-align: center;
+  flex-wrap: nowrap;
+  width: 550px;
+  height: 20px;
 }
+
+.fa-info {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #0065fc;
+  border: 1px solid #deebff;
+  width: 25px;
+  height: 25px;
+  font-size: large;
+  text-align: center;
+  border-radius: 50%;
+  padding: 2px;
+}
+.nombre_logements{
+  margin-left: 15px;
+  font-size: larger;
+}
+
 /* Premier conteneur Hébergements-------------------------------------------------*/
 
 .conteneur_hebergement {
@@ -533,6 +559,28 @@ h4 {
     width: 50%;
     margin-bottom: 40px;
   }
+
+  /*nav {
+    width: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav_inscrire {
+    width: 100%;
+    display: inline-flex;
+    justify-content: right;
+    align-content: flex-end;
+    margin-top: 60px;
+  }
+  .nav_activite .nav_hebergement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }*/
+
   nav {
     width: 100%;
     display: flex;
@@ -544,10 +592,7 @@ h4 {
     top: 35px;
     width: 100%;
   }
-  nav:nth-child(3) {
-    justify-self: flex-end;
-    align-self: flex-end;
-  }
+ 
   .nav_hebergement {
     width: 50%;
   }
@@ -662,28 +707,6 @@ h4 {
     display: flex;
     flex-direction: column;
   }
-  /*nav {
-    width: 500px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .nav_inscrire {
-    width: 100%;
-    display: inline-flex;
-    justify-content: right;
-    align-content: flex-end;
-    margin-top: 60px;
-  }
-  .nav_activite .nav_hebergement {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
-  }*/
-  h1 {
-    width: auto;
-    margin-top: 50px;
-  }
+  
 }
+
