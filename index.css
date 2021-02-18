@@ -148,9 +148,7 @@ form {
   border-width: 3px;
   padding-right: 20px;
   border-radius: 50px;
-  border-color: #f2f2f2;
-  margin-bottom: 70px;
-  
+  border-color: #f2f2f2;  
 }
 .bouton:hover {
   background-color: #deebff;
@@ -560,26 +558,7 @@ h4 {
     margin-bottom: 40px;
   }
 
-  /*nav {
-    width: 500px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .nav_inscrire {
-    width: 100%;
-    display: inline-flex;
-    justify-content: right;
-    align-content: flex-end;
-    margin-top: 60px;
-  }
-  .nav_activite .nav_hebergement {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start;
-  }*/
+  
 
   nav {
     width: 100%;
@@ -604,26 +583,32 @@ h4 {
   }
 
   form {
-    width: 60%;
+    width: 80%;
+  }
+  .envoi input{
+    width:60px;
   }
 
   .filtres p {
     width: 100%;
     margin-left: 5px;
-    font-size: larger;
     display: flex;
   }
   .filtres {
-    width: 85%;
-    height: auto;
+    width: 400px;
+    height: ;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: space-between;
   }
   .bouton {
     font-size: large;
     margin-bottom: 20px;
-    border-width: 2px;
+    border-width: 3px;
+  }
+  .info{
+    width: 400px;
   }
   section {
     width: 100%;
@@ -671,6 +656,9 @@ h4 {
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
     background-color: white;
     margin-top: 0;
@@ -678,35 +666,55 @@ h4 {
   }
 
   .cadre_1 {
-    width: 500px;
+    width: 450px;
     height: 250px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .cadre_1 img{
+    height: 200px;
   }
   .colone_image {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
   .colone_image .cadre_2 .cadre_3 {
-    width: 500px;
+    width: 450px;
     height: 250px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .cadre_2 {
-    width: 500px;
+    width: 450px;
     height: 250px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .cadre_2 img{
+    height:200px
   }
   .cadre_3 {
-    width: 500px;
+    width: 450px;
     height: 250px;
     display: flex;
     flex-direction: column;
   }
-  
+  .cadre_3 img{
+    height: 200px;
+  }
+  .conteneur_footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+  }
 }
 
