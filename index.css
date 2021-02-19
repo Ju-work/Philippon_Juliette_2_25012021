@@ -400,6 +400,7 @@ section {
   width: 100%;
   height: 500px;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 h3 {
@@ -492,7 +493,7 @@ h3 {
 }
 footer {
   background-color: #f2f2f2;
-  margin-top: 150px;
+  margin-top: 50px;
   padding: 10px;
   height: auto;
   width: 100%;
@@ -538,15 +539,11 @@ h4 {
 /*Les mediaqueries version mobile-----------------------------------------------------*/
 
 @media screen and (max-width: 500px) {
+  
   .main_wrapper {
     width: 500px;
-    /*padding: 0 2%;*/
   }
 
-  header {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
   .haut_de_page {
     width: 100%;
     display: flex;
@@ -556,100 +553,146 @@ h4 {
   .logo {
     width: 50%;
     margin-bottom: 40px;
+    margin-left: 20px;
   }
 
-  
-
-  nav {
+    nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
   }
   .nav_inscrire {
     position: absolute;
-    left: 350px;
+    left: 410px;
     top: 35px;
     width: 100%;
   }
- 
+  .nav_inscrire:hover{
+    display: none;
+
+  }
   .nav_hebergement {
     width: 50%;
+    text-align: center; 
+    padding-bottom: 20px;
+    border-bottom: 4px solid #deebff; 
   }
-  .nav_activite {
+  
+  .nav_hebergement:hover{
+    border-top: 0;
+    font-family: "Raleway_bold";
+    color:#0065fc;
+    border-bottom: 4px solid #0065fc;
+  }
+  
+.nav_activite {
     width: 50%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #deebff; 
   }
+.nav_activite:hover{
+  border-bottom: 4px solid #0065fc;
+  
+}
+
+
   .formulaire {
     width: 500px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+  }
+  
+  h1{
+    font-size: xx-large;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  
+  p{
+    margin-left: 20px;
   }
 
   form {
     width: 80%;
   }
+  
   .envoi input{
     width:60px;
   }
 
   .filtres p {
     width: 100%;
+    margin-top: 10px;
     margin-left: 5px;
     display: flex;
   }
+  
   .filtres {
+    margin-left: 20px;
     width: 400px;
-    height: ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
   }
+  
   .bouton {
     font-size: large;
     margin-bottom: 20px;
     border-width: 3px;
   }
+  
   .info{
     width: 400px;
+    margin-left: 20px;
   }
+  
   section {
-    width: 100%;
+    width: 500px;
     display: flex;
     flex-direction: column-reverse;
   }
+  
   .conteneur_populaire {
+    display: flex;
+    align-items: center;
     width: 100%;
     margin: 0 0 30px 0;
     padding: 10px 5px 30px 2px;
     border-radius: 0%;
     background-color: #deebff;
   }
+  
   .conteneur_populaire .cadre_blanc {
-    width: 100%;
+    width: 450px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 10px;
     margin-top: 5px;
   }
+  
   .conteneur_hebergement {
     width: 500px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
-    margin-top: 0;
-    padding: 0;
+    padding: 0 2px 0 2px;
   }
+  
   .conteneur_hebergement .cadre_blanc {
-    display: block;
-    justify-content: flex-end;
     width: 90%;
     margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
+  .cadre_blanc img{
+    width: 450px;
+  }
+  
   .plus {
     margin-top: 30px;
     margin-left: 25px;
   }
+  
   .conteneur_activitee {
     width: 500px;
     height: auto;
@@ -658,31 +701,34 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: center;
     flex-wrap: wrap;
     background-color: white;
     margin-top: 0;
+    margin-bottom: 2px;
     padding: 0;
   }
-
+  
   .cadre_1 {
-    width: 450px;
+    width: 463px;
     height: 250px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
   }
+  
   .cadre_1 img{
     height: 200px;
   }
+  
   .colone_image {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
     margin-bottom: 30px;
   }
+  
   .colone_image .cadre_2 .cadre_3 {
-    width: 450px;
+    width: 463px;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -690,31 +736,41 @@ h4 {
   }
 
   .cadre_2 {
-    width: 450px;
+    width: 463px;
     height: 250px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
   }
+  
   .cadre_2 img{
     height:200px
   }
+  
   .cadre_3 {
-    width: 450px;
+    width: 463px;
     height: 250px;
     display: flex;
     flex-direction: column;
   }
+  
   .cadre_3 img{
     height: 200px;
   }
+  
+  footer{
+    width: 500px;
+    height: auto;
+    margin-top: 2px;
+  }
+  
   .conteneur_footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 500px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
 
