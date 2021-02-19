@@ -594,7 +594,7 @@ h4 {
 .nav_activite:hover{
   border-bottom: 4px solid #0065fc;
   
-}
+  }
 
 
   .formulaire {
@@ -774,3 +774,80 @@ h4 {
   }
 }
 
+@media screen and (max-width: 1024px){
+  nav{
+    width: 50%;
+  }
+
+  h1{
+    margin-top: 50px;
+  }
+  .formulaire{
+    width: 50%;
+  }
+  .filtres{
+    width: 100%;
+  }
+  section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .conteneur_hebergement{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .plus{
+    margin-top: 10px;
+  }
+  .conteneur_hebergement .cadre_blanc{
+    height: 250px;
+  }
+  .conteneur_populaire{
+    background-color: #deebff;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    padding: 15px 0px 20px 0px;
+  }
+  .description{
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .conteneur_populaire .cadre_blanc{
+    height: auto;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    
+  }
+  .conteneur_populaire .cadre_blanc img{
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+  }
+  .etoile{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .conteneur_activitee{
+    margin-top: 0%;
+  }
+  .conteneur_activitee .cadre_blanc img{
+    margin-bottom: -9px;
+  }
+
+  footer{
+    width: 100%;
+  }
+  .conteneur_footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
