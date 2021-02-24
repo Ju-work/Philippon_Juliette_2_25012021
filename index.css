@@ -8,14 +8,21 @@
 }
 
 body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: "Raleway_light"; /* police appliquée à tout le site par défaut */
 }
 
 .main_wrapper { /* pour définir des marges plus facilement sur ma page*/
   width: 100%;
-  padding: 0 2%;
 }
 
+header{
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .logo {
   padding-top: 15px;
   width: 80%;
@@ -25,10 +32,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
 
 .entête {
   margin: 0 0 10px 0;
+  max-width: 100%;
 }
 .entête p{
   font-size: larger;
@@ -256,7 +265,6 @@ form {
   width: 100%;
   height: auto;
   margin: 0 20px 0 0;
-  /*margin: 2% 2% 5% 0%;*/
   border-radius: 20px;
   padding: 25px 25px 0px 25px;
   background-color: #f2f2f2;
@@ -266,26 +274,26 @@ form {
   height: auto;
 }
 
-.cadre_blanc {
+/*.cadre_blanc {
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
-  /*justify-content: space-around;*/
-}
+}*/
 
 .conteneur_hebergement .cadre_blanc {
-  width: 28%;
-  height: 30%;
+  width: 30%;
+  height: 280px;
   background-color: #ffff;
   border-radius: 20px;
-  margin: 12px 0px 30px 0px;
+ /* margin: 12px 0px 30px 0px;*/
   padding: 7px 7px 0px 7px;
   box-shadow: #ccc 0px 0px 16px;
 }
 
 .cadre_blanc img {
   width: 100%;
-  height: 155px;
+  height: 180px;
+  margin-bottom: 5px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -304,8 +312,8 @@ h2 {
 
 .nom_prix_note {
   width: auto;
-  height: 50%;
-  margin: 5px 0px 7px 0px;
+  height: auto;
+  margin: 5px 0px 5px 0px;
   padding-left: 9px;
   font-size: 17px;
   text-align: left;
@@ -348,9 +356,8 @@ h2 {
 .conteneur_populaire {
   width: 30%;
   height: auto;
-  margin: 0 0 0 20px;
   border-radius: 20px;
-  padding: 25px 25px 25px 25px;
+  padding: 25px 10px 10px 10px;
   background-color: #f2f2f2;
   display: inline-flex;
   justify-content: space-around;
@@ -386,7 +393,9 @@ h2 {
 }
 
 section {
-  width: 100%;
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -494,7 +503,6 @@ h3 {
 footer {
   background-color: #f2f2f2;
   margin-top: 50px;
-  padding: 10px;
   height: auto;
   width: 100%;
 }
@@ -538,10 +546,10 @@ h4 {
 
 /*Les mediaqueries version mobile-----------------------------------------------------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
   
   .main_wrapper {
-    width: 500px;
+    width: 100%;
   }
 
   .haut_de_page {
@@ -580,7 +588,6 @@ h4 {
   
   .nav_hebergement:hover{
     border-top: 0;
-    font-family: "Raleway_bold";
     color:#0065fc;
     border-bottom: 4px solid #0065fc;
   }
@@ -598,7 +605,7 @@ h4 {
 
 
   .formulaire {
-    width: 500px;
+    width: 100%;
     margin-left: 20px;
     margin-bottom: 2px;
   }
@@ -649,7 +656,7 @@ h4 {
   }
   
   section {
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -673,7 +680,7 @@ h4 {
   }
   
   .conteneur_hebergement {
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
@@ -694,7 +701,7 @@ h4 {
   }
   
   .conteneur_activitee {
-    width: 500px;
+    width: 100%;
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
@@ -759,7 +766,7 @@ h4 {
   }
   
   footer{
-    width: 500px;
+    width: 100%;
     height: auto;
     margin-top: 2px;
   }
@@ -768,13 +775,13 @@ h4 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 500px;
+    width: 100%;
     height: auto;
     margin-top: 0;
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-device-width: 1024px){
   nav{
     width: 50%;
   }
