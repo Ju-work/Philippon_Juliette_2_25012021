@@ -56,6 +56,28 @@
             </form>
           </div>
 
+          <div class="formulaire_media">
+            <form method="search" action="traitement.php">
+              <!--action fictive pour l'instant-->
+              <div class="fas fa-map-marker-alt"></div>
+              <div class="champ">
+                <!--<label for="recherche_destination">Votre destination</label>-->
+
+                <input
+                  type="text"
+                  name="recherche"
+                  id="recherche_destination"
+                  placeholder="Votre destination"
+                />
+              </div>
+              <div class="loupe">
+                <button class="button_submit">
+                  <div class="fas fa-search"></div>
+                </button>
+              </div>
+            </form>
+          </div>
+
           <!--menu avec les filtres-->
 
           <div class="filtres">
@@ -79,7 +101,9 @@
           </div>
 
           <div class="info">
-            <div class="fas fa-info"></div>
+            <div class="ring">
+              <div class="fas fa-info"></div>
+            </div>
             <div class="nombre_logements">
               Plus de 500 logements sont disponibles dans cette ville
             </div>
