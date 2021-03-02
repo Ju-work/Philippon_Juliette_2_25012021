@@ -14,13 +14,16 @@ body {
   font-family: "Raleway_light"; /* police appliquée à tout le site par défaut */
 }
 
-.main_wrapper { /* pour définir des marges plus facilement sur ma page*/
-  width: 100%;}
-
-header{
+.main_wrapper {
+  /* pour définir des marges plus facilement sur ma page*/
   max-width: 100%;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+header {
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 .logo {
   padding-top: 15px;
@@ -31,14 +34,9 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
-.entête {
-  margin: 0 0 10px 0;
-  max-width: 100%;
-}
-.entête p{
+.entête p {
   font-size: larger;
 }
 
@@ -75,7 +73,6 @@ h1 {
 
 /* formulaire-----------------------------------------------------------------------*/
 
-
 .formulaire {
   display: inline-flex;
   width: 25%;
@@ -86,8 +83,8 @@ h1 {
 
 form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /*justify-content: space-between;
+  align-items: center;*/
   width: 100%;
   height: 47px;
   border: 3px solid #f2f2f2;
@@ -105,32 +102,33 @@ form {
   border-radius: 5px 0px 0px 5px;
 }
 
-
 .champ input {
   font-family: "Raleway_bold";
-  text-decoration;
   font-size: larger;
   width: 120%;
-  height: 84%;
+  height: 89%;
   border-style: none;
 }
-::placeholder{
+::placeholder {
   color: black;
   opacity: 1;
 }
 .envoi input {
   font-family: "Raleway_bold";
   background: #0065fc;
-  border: 3px solid #0065fc;
+  border: 4px solid #0065fc;
   display: flex;
-  color:white;
+  color: white;
   font-size: larger;
-  height: 49px;
+  padding-bottom: 5px;
+  position: relative;
+  top: -2px;
+  right: -2px;
+  height: 51px;
   width: 160px;
   margin-left: 45px;
   border-radius: 0px 10px 10px 0px;
 }
-
 
 /* boutons filtres-----------------------------------------------------------------*/
 
@@ -156,7 +154,7 @@ form {
   border-width: 3px;
   padding-right: 20px;
   border-radius: 50px;
-  border-color: #f2f2f2;  
+  border-color: #f2f2f2;
 }
 .bouton:hover {
   background-color: #deebff;
@@ -176,9 +174,9 @@ form {
   text-align: center;
   border-radius: 50%;
   margin-right: 10px;
- position: relative;
+  position: relative;
   left: -3px;
- }
+}
 
 .bouton .fa-child {
   display: flex;
@@ -192,7 +190,7 @@ form {
   text-align: center;
   border-radius: 50%;
   margin-right: 10px;
- position: relative;
+  position: relative;
   left: -3px;
 }
 
@@ -208,7 +206,7 @@ form {
   text-align: center;
   border-radius: 50%;
   margin-right: 10px;
- position: relative;
+  position: relative;
   left: -3px;
 }
 .bouton .fa-dog {
@@ -223,7 +221,7 @@ form {
   text-align: center;
   border-radius: 50%;
   margin-right: 10px;
- position: relative;
+  position: relative;
   left: -3px;
 }
 .entête p {
@@ -233,15 +231,15 @@ form {
 .info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  width: 550px;
+  width: auto;
   height: 20px;
 }
 
 .fa-info {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: #0065fc;
@@ -253,7 +251,7 @@ form {
   border-radius: 50%;
   padding: 2px;
 }
-.nombre_logements{
+.nombre_logements {
   margin-left: 15px;
   font-size: larger;
 }
@@ -278,7 +276,7 @@ form {
   height: auto;
   background-color: #ffff;
   border-radius: 20px;
- margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
   padding: 7px 7px 0px 7px;
   box-shadow: #ccc 0px 0px 16px;
 }
@@ -312,16 +310,20 @@ h2 {
   text-align: left;
   line-height: 25px;
 }
+
 .nom_etablissement {
   font-family: "Raleway_bold";
   font-size: larger;
 }
+
 .fa.fa-star.checked {
   color: #0065fc;
 }
+
 .fa-star {
   color: #f2f2f2;
 }
+
 .plus {
   width: 100%;
   display: flex;
@@ -329,6 +331,7 @@ h2 {
   font-size: 20px;
   margin-left: 20px;
 }
+
 /* Partie conteneur Les plus populaires---------------------------------------------- */
 
 .titre_picto {
@@ -356,6 +359,7 @@ h2 {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .petit_cadre_blanc {
   display: flex;
   flex-wrap: nowrap;
@@ -367,6 +371,7 @@ h2 {
   padding: 7px;
   box-shadow: #ccc 0px 0px 16px;
 }
+
 .petit_cadre_blanc img {
   height: 185px;
   width: 45%;
@@ -374,6 +379,7 @@ h2 {
   border-radius: 20px 0px 0px 20px;
   margin-right: 10px;
 }
+
 .conteneur_populaire .description {
   display: flex;
   justify-content: space-between;
@@ -386,8 +392,8 @@ h2 {
 
 section {
   max-width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px;
+  margin-right: 20px;*/
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -533,23 +539,22 @@ h4 {
 /*Les mediaqueries version mobile-----------------------------------------------------*/
 
 @media screen and (max-device-width: 500px) {
-  
-  body{
-    max-width: 100%;
+  body {
+    width: 100%;
     padding: 0;
     margin: 0;
   }
   .main_wrapper {
     max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
-  header{
+  header {
     max-width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
   }
 
   .haut_de_page {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -559,66 +564,65 @@ h4 {
     margin-bottom: 40px;
   }
 
-  nav{
-    width: 100%;
+  nav {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-    
   }
   .nav_inscrire {
     width: auto;
-    position:relative;
-    left: 140px;
+    position: relative;
+    left: 124px;
     top: -80px;
     padding: 0;
     margin: 0;
   }
-  
+
   .nav_hebergement {
     width: 50%;
-    text-align: center; 
+    text-align: center;
     padding-bottom: 20px;
-    border-bottom: 4px solid #deebff; 
-  }
-  .nav_activite {
-     width: 50%;
-      text-align: center;
-      padding-bottom: 20px;
-      border-bottom: 4px solid #deebff; 
-  }
-  nav a:hover {
-  display: none;
-  }
- 
-  .nav_hebergement:hover{
-    border-top: 0;
-    color:#0065fc;
-    border-bottom: 4px solid #0065fc;
-  }
-  
-  .nav_activite:hover{
-  border-bottom: 4px solid #0065fc;
-  
+    border-bottom: 4px solid #deebff;
   }
 
+  .nav_activite {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #deebff;
+  }
+
+  nav a:hover {
+    display: none;
+  }
+
+  .nav_hebergement:hover {
+    border-top: 0;
+    color: #0065fc;
+    border-bottom: 4px solid #0065fc;
+  }
+
+  .nav_activite:hover {
+    border-bottom: 4px solid #0065fc;
+  }
 
   .formulaire {
     width: 100%;
     margin-bottom: 2px;
   }
-  
-  h1{
-    font-size: xx-large;
+
+  h1 {
+    font-size: x-large;
     margin-top: 40px;
   }
-  
+
   form {
     width: 80%;
   }
-  
-  .envoi input{
-    width:60px;
+
+  .envoi input {
+    width: 60px;
   }
 
   .filtres p {
@@ -626,28 +630,30 @@ h4 {
     margin-top: 10px;
     display: flex;
   }
-  
+
   .filtres {
-    width: 400px;
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
   }
-  
+
   .bouton {
     font-size: large;
     margin-bottom: 20px;
     border-width: 3px;
   }
-  
-  .info{
+
+  .info {
     width: 90%;
     margin-bottom: 50px;
   }
-  .fa-info{
+
+  .fa-info {
     min-width: 25px;
   }
+
   section {
     padding: 0;
     margin: 0;
@@ -655,14 +661,14 @@ h4 {
     display: flex;
     flex-direction: column-reverse;
   }
-  
+
   .conteneur_populaire {
     display: flex;
     width: 100%;
     border-radius: 0%;
     background-color: #deebff;
   }
-  
+
   .conteneur_populaire .petit_cadre_blanc {
     width: 95%;
     margin-left: 10px;
@@ -671,80 +677,85 @@ h4 {
     margin-top: 5px;
   }
 
-  .titre_picto{
+  .titre_picto {
     margin-bottom: 10px;
   }
-  
-  h2{
+
+  h2 {
     margin-top: 50px;
     margin-bottom: 0;
   }
+
   .conteneur_hebergement {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    padding: 0 ;
-    margin-top:20px;
+    padding: 0;
+    margin-top: 20px;
   }
-  
+
   .conteneur_hebergement .cadre_blanc {
     width: 90%;
     height: auto;
     margin-bottom: 30px;
     margin-top: 0;
   }
-  
-  .cadre_blanc img{
+
+  .cadre_blanc img {
     width: 100%;
     height: 150px;
     padding: 0;
   }
-  
+
   .plus {
     margin-top: 30px;
     margin-left: 25px;
   }
-  
+
   .conteneur_activitee {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;*/
     flex-wrap: wrap;
     background-color: white;
     padding: 0;
+    margin-bottom: 40px;
   }
-  h3{
+
+  h3 {
     width: 90%;
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
+
   .cadre_1 {
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin: 20px;
   }
-  
-  .cadre_1 img{
+
+  .cadre_1 img {
     height: 200px;
   }
-  
+
   .colone_image {
     width: 90%;
     height: auto;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin: 20px;
   }
-  
+
   .colone_image .cadre_2 .cadre_3 {
     width: 90%;
     height: 250px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
   }
 
   .cadre_2 {
@@ -754,28 +765,28 @@ h4 {
     flex-direction: column;
     margin-bottom: 30px;
   }
-  
-  .cadre_2 img{
-    height:200px
+
+  .cadre_2 img {
+    height: 200px;
   }
-  
+
   .cadre_3 {
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
   }
-  
-  .cadre_3 img{
+
+  .cadre_3 img {
     height: 200px;
   }
-  
-  footer{
+
+  footer {
     width: 100%;
     height: auto;
     margin-top: 2px;
   }
-  
+
   .conteneur_footer {
     display: flex;
     flex-direction: column;
@@ -786,59 +797,71 @@ h4 {
   }
 }
 
-@media screen and (max-device-width: 1024px){
-
-  body{
-    width: 100%;
-  }
-  .main_wrapper{
-   width: 100%;
-  }
-  .haut_de_page{
+@media screen and (max-device-width: 1024px) {
+  body {
     max-width: 100%;
   }
 
-  .logo{
-    width: 100%;}
-
-
-  h1{
-    margin-top: 50px;
+  .main_wrapper {
+    max-width: 100%;
   }
-  .formulaire{
-    width: 50%;
+
+  header {
+    max-width: 100%;
+    padding: 10px;
   }
-  .filtres{
+
+  .haut_de_page {
+    max-width: 100%;
+  }
+
+  .logo {
     width: 100%;
   }
-  section{
+
+  h1 {
+    margin-top: 50px;
+  }
+
+  .formulaire {
+    width: 50%;
+  }
+
+  .filtres {
+    width: 100%;
+  }
+
+  section {
     width: 100%;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    
   }
 
-  h2{
+  h2 {
     margin-bottom: 20px;
   }
-  .conteneur_hebergement{
+
+  .conteneur_hebergement {
     width: 100%;
     margin: 0;
     margin-bottom: 30px;
   }
-  .plus{
+
+  .plus {
     margin-top: 10px;
   }
-  .conteneur_hebergement .cadre_blanc{
+
+  .conteneur_hebergement .cadre_blanc {
     height: auto;
   }
 
-  .nom_prix_note{
+  .nom_prix_note {
     margin: 0;
     padding: 7px;
   }
-  .conteneur_populaire{
+
+  .conteneur_populaire {
     background-color: #deebff;
     width: 100%;
     height: auto;
@@ -846,39 +869,44 @@ h4 {
     padding: 0;
     display: flex;
   }
-  .description{
+
+  .description {
     margin-top: 8px;
     margin-bottom: 0;
     padding: 0;
   }
-  .conteneur_populaire .cadre_blanc{
+
+  .conteneur_populaire .cadre_blanc {
     height: auto;
     width: 270px;
     display: flex;
     flex-direction: column;
     padding-bottom: 5px;
-    
   }
-  .conteneur_populaire .cadre_blanc img{
+
+  .conteneur_populaire .cadre_blanc img {
     width: 100%;
     border-radius: 5% 5% 0 0;
   }
-  .etoile{
+
+  .etoile {
     display: flex;
     justify-content: flex-start;
   }
 
-  .conteneur_activitee{
+  .conteneur_activitee {
     margin-top: 0%;
   }
-  .conteneur_activitee .cadre_blanc img{
+
+  .conteneur_activitee .cadre_blanc img {
     margin-bottom: -9px;
   }
 
-  footer{
+  footer {
     width: 100%;
   }
-  .conteneur_footer{
+
+  .conteneur_footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
