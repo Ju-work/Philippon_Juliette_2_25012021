@@ -561,6 +561,11 @@ h4 {
     max-width: 100%;
   }
 
+  .entête {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .haut_de_page {
     max-width: 100%;
     display: flex;
@@ -570,6 +575,7 @@ h4 {
   .logo {
     width: auto;
     margin-bottom: 40px;
+    margin-left: 10px;
   }
 
   nav {
@@ -581,7 +587,7 @@ h4 {
   .nav_inscrire {
     width: auto;
     position: relative;
-    left: 124px;
+    left: 35%;
     top: -80px;
     padding: 0;
     margin: 0;
@@ -654,7 +660,7 @@ h4 {
     right: -2px;
     height: 51px;
     width: 60%;
-    margin-left: 45px;
+    margin-left: 90px;
     border-radius: 15px 15px 15px 15px;
   }
 
@@ -729,14 +735,15 @@ h4 {
 
   .conteneur_populaire {
     display: flex;
-    width: 100%;
+    width: auto;
     border-radius: 0%;
     background-color: #deebff;
+    padding: 0 0 30px 0;
   }
 
   .conteneur_populaire .petit_cadre_blanc {
     height: auto;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -745,7 +752,7 @@ h4 {
 
   .conteneur_populaire .petit_cadre_blanc img {
     width: 100%;
-    border-radius: 20% 20% 0 0;
+    border-radius: 10px 10px 0 0;
   }
 
   h2 {
@@ -858,7 +865,7 @@ h4 {
   }
 }
 
-@media screen /*and (min-width: 500px) */ and (max-width: 1024px) {
+@media screen and (min-width: 501px) and (max-width: 1024px) {
   body {
     max-width: 100%;
   }
@@ -949,8 +956,12 @@ h4 {
     padding: 0;
   }
 
+  .petit_cadre_blanc {
+    margin: 0 0 20px 0;
+  }
   .conteneur_populaire .petit_cadre_blanc {
     height: auto;
+    width: 29%;
     display: flex;
     flex-wrap: nowrap;
     padding-bottom: 5px;
@@ -959,7 +970,8 @@ h4 {
 
   .conteneur_populaire .petit_cadre_blanc img {
     width: 100%;
-    border-radius: 5% 5% 0 0;
+    height: 100%;
+    border-radius: 10% 0 0 10%;
   }
 
   .etoile {
