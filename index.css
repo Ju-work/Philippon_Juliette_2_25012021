@@ -399,8 +399,6 @@ h2 {
 
 section {
   max-width: 100%;
-  /* margin-left: 20px;
-  margin-right: 20px;*/
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -628,10 +626,6 @@ h4 {
     border-bottom: 4px solid #0065fc;
   }
 
-  form {
-    width: 100%;
-  }
-
   .formulaire_media {
     display: inline-flex;
     width: 100%;
@@ -639,7 +633,9 @@ h4 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-
+  .loupe {
+    display: flex;
+  }
   .button_submit {
     font-family: "Raleway_bold";
     background: #0065fc;
@@ -672,7 +668,12 @@ h4 {
   }
 
   form {
-    width: 80%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .fa-map-marker-alt {
+    border-radius: 5px 0 0 5px;
   }
 
   .envoi input {
