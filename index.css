@@ -6,6 +6,12 @@
   font-family: "Raleway_bold";
   src: url("./typos/Raleway-Bold.ttf") format("truetype");
 }
+a.carte {
+  color: black;
+  text-decoration-line: none;
+  width: auto;
+  height: auto;
+}
 
 body {
   width: 100%;
@@ -47,10 +53,12 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: large;
 }
 
 nav a {
-  font-size: 1.3em;
+  color: #0065fc;
+  font-size: large;
   padding-bottom: 3px;
   text-decoration: none;
 }
@@ -62,6 +70,7 @@ nav a:hover {
 
 .nav_inscrire {
   font-family: "Raleway_bold";
+  color: #0065fc;
 }
 
 /* titre principal-------------------------------------------------------------------*/
